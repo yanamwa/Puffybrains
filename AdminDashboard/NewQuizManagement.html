@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>PuffyBrain — Dashboard</title>
+  <title>PuffyBrain — Quiz Management</title>
   <link rel="stylesheet" href="newquizmanage.css" />
 
               <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -80,14 +80,14 @@
               </li>
 
               <li class="sidebar-list-item">
-                  <a href="../Admin User Management/usermanagement.html" class="menu-item">
+                  <a href="../Admin User Management/newUserManagement.html" class="menu-item">
                       <i class="bx bx-book"></i>
                       <span>User Management</span>
                   </a>
               </li>
 
               <li class="sidebar-list-item">
-                  <a href="../AdminDashboard/quiz management.html" class="menu-item active">
+                  <a href="../AdminDashboard/NewQuizManagement.html" class="menu-item active">
                       <i class="bx bx-folder"></i>
                       <span>Quiz Management</span>
                   </a>
@@ -251,7 +251,7 @@
         document.querySelectorAll('.page-box').forEach(btn => {
             btn.addEventListener('click', function() {
                 if (this.textContent !== '‹' && this.textContent !== '›' && this.textContent !== '...') {
-                    document.querySelectorAll('.page-btn').forEach(b => b.classList.remove('active'));
+                    document.querySelectorAll('.page-box').forEach(b => b.classList.remove('active'));
                     this.classList.add('active');
                 }
             });
